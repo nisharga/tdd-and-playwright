@@ -5,7 +5,7 @@ test.beforeAll(async () => {
 })
 
 test.beforeEach(async({page})=>{
-    await page.goto('')
+    await page.goto('http://localhost:5000')
 })
 
 test('Get by Role practice - heading', async ({ page }) => {
@@ -31,6 +31,7 @@ test('Get by Role - list', async ({ page }) => {
     for(const item of serviceItems) {
         const itemText = await item.textContent()
         expect(itemText).toBeTruthy();
+        console.log('itemText', itemText);
     }
 })
 

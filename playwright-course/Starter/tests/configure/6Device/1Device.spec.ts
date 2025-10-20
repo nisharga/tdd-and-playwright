@@ -11,5 +11,6 @@ test.use({
 })
 
 test('Observe window', async ({ page }) => {
-    await page.goto('https://www.google.com/')
+    await page.goto('https://www.google.com.bd/')
+    await page.pause();
 })

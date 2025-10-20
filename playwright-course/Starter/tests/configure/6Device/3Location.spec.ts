@@ -13,5 +13,5 @@ test('Observe location', async ({ page }) => {
     await page.goto('https://www.openstreetmap.org/')
 
     await page.getByRole('button', { name: 'Show My Location' }).click();    
-
+    await page.pause()
 })

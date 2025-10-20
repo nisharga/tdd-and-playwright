@@ -4,7 +4,9 @@ test('Test 1', () => {
     console.log('test 1')
 })
 
-test('Test 2', () => {
+test.only('Test 2', {
+    tag: '@test'
+}, () => {
     console.log('test 2')
 })
 
