@@ -13,6 +13,6 @@
     "@types/node": "^24.0.12"
   },
   "dependencies": {
-    "mailslurp-client": "^15.24.1"
+    "mailslurp-client": "^15.24.2"
   }
 }
